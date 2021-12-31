@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C3AA61F276F6AAD00BF993F /* DZ2_PoletaevAVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AA61E276F6AAD00BF993F /* DZ2_PoletaevAVApp.swift */; };
+		8C3AA621276F6AAD00BF993F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AA620276F6AAD00BF993F /* ContentView.swift */; };
+		8C3AA623276F6AB000BF993F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AA622276F6AB000BF993F /* Assets.xcassets */; };
+		8C3AA626276F6AB000BF993F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AA625276F6AB000BF993F /* Preview Assets.xcassets */; };
+		8C3AA636276F82B800BF993F /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AA635276F82B800BF993F /* NewsViewModel.swift */; };
+		8C65317E277AEE8B009B9367 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C65317D277AEE8B009B9367 /* NewsList.swift */; };
+		8C653181277AEFB1009B9367 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 8C653180277AEFB1009B9367 /* Networking */; };
+		8C65318C277B2E6A009B9367 /* LoadingIndicatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C65318B277B2E6A009B9367 /* LoadingIndicatorModifier.swift */; };
+		8C65318E277B300E009B9367 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C65318D277B300E009B9367 /* LazyView.swift */; };
+		8C653191277B3045009B9367 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C653190277B3045009B9367 /* Array.swift */; };
+		8CB4C9A5277C49C30023BC7B /* NewsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4C9A4277C49C30023BC7B /* NewsContent.swift */; };
+		8CCECE6D277CE27D005587CF /* SwiftUINavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 8CCECE6C277CE27D005587CF /* SwiftUINavigator */; };
+		8CCECE71277F1EA7005587CF /* NewsContent2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCECE70277F1EA7005587CF /* NewsContent2.swift */; };
+		8CCECE75277F29BF005587CF /* TitleButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCECE74277F29BF005587CF /* TitleButtonModifier.swift */; };
+		8CCECE77277F2E0A005587CF /* Article+Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCECE76277F2E0A005587CF /* Article+Id.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C3AA61B276F6AAD00BF993F /* DZ2_PoletaevAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ2_PoletaevAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3AA61E276F6AAD00BF993F /* DZ2_PoletaevAVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DZ2_PoletaevAVApp.swift; sourceTree = "<group>"; };
+		8C3AA620276F6AAD00BF993F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C3AA622276F6AB000BF993F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C3AA625276F6AB000BF993F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C3AA635276F82B800BF993F /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		8C65317C277AECF3009B9367 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = Modules/Networking; sourceTree = "<group>"; };
+		8C65317D277AEE8B009B9367 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		8C65318B277B2E6A009B9367 /* LoadingIndicatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorModifier.swift; sourceTree = "<group>"; };
+		8C65318D277B300E009B9367 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		8C653190277B3045009B9367 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		8CB4C9A4277C49C30023BC7B /* NewsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContent.swift; sourceTree = "<group>"; };
+		8CCECE6B277CE1BF005587CF /* SwiftUINavigator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUINavigator; path = Modules/SwiftUINavigator; sourceTree = "<group>"; };
+		8CCECE70277F1EA7005587CF /* NewsContent2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContent2.swift; sourceTree = "<group>"; };
+		8CCECE74277F29BF005587CF /* TitleButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButtonModifier.swift; sourceTree = "<group>"; };
+		8CCECE76277F2E0A005587CF /* Article+Id.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+Id.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C3AA618276F6AAD00BF993F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCECE6D277CE27D005587CF /* SwiftUINavigator in Frameworks */,
+				8C653181277AEFB1009B9367 /* Networking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C3AA612276F6AAD00BF993F = {
+			isa = PBXGroup;
+			children = (
+				8CCECE6B277CE1BF005587CF /* SwiftUINavigator */,
+				8C65317C277AECF3009B9367 /* Networking */,
+				8C3AA61D276F6AAD00BF993F /* DZ2_PoletaevAV */,
+				8C65318A277B2E3C009B9367 /* Modifiers */,
+				8C65318F277B302C009B9367 /* Extensions */,
+				8C3AA61C276F6AAD00BF993F /* Products */,
+				8C65317F277AEFB1009B9367 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C3AA61C276F6AAD00BF993F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C3AA61B276F6AAD00BF993F /* DZ2_PoletaevAV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C3AA61D276F6AAD00BF993F /* DZ2_PoletaevAV */ = {
+			isa = PBXGroup;
+			children = (
+				8C3AA61E276F6AAD00BF993F /* DZ2_PoletaevAVApp.swift */,
+				8C3AA620276F6AAD00BF993F /* ContentView.swift */,
+				8C3AA62C276F719A00BF993F /* News */,
+				8C3AA622276F6AB000BF993F /* Assets.xcassets */,
+				8C3AA624276F6AB000BF993F /* Preview Content */,
+			);
+			path = DZ2_PoletaevAV;
+			sourceTree = "<group>";
+		};
+		8C3AA624276F6AB000BF993F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8C3AA625276F6AB000BF993F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C3AA62C276F719A00BF993F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				8C3AA635276F82B800BF993F /* NewsViewModel.swift */,
+				8C65317D277AEE8B009B9367 /* NewsList.swift */,
+				8CB4C9A4277C49C30023BC7B /* NewsContent.swift */,
+				8CCECE70277F1EA7005587CF /* NewsContent2.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		8C65317F277AEFB1009B9367 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C65318A277B2E3C009B9367 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8C65318B277B2E6A009B9367 /* LoadingIndicatorModifier.swift */,
+				8C65318D277B300E009B9367 /* LazyView.swift */,
+				8CCECE74277F29BF005587CF /* TitleButtonModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		8C65318F277B302C009B9367 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C653190277B3045009B9367 /* Array.swift */,
+				8CCECE76277F2E0A005587CF /* Article+Id.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C3AA61A276F6AAD00BF993F /* DZ2_PoletaevAV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3AA629276F6AB000BF993F /* Build configuration list for PBXNativeTarget "DZ2_PoletaevAV" */;
+			buildPhases = (
+				8C3AA617276F6AAD00BF993F /* Sources */,
+				8C3AA618276F6AAD00BF993F /* Frameworks */,
+				8C3AA619276F6AAD00BF993F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZ2_PoletaevAV;
+			packageProductDependencies = (
+				8C653180277AEFB1009B9367 /* Networking */,
+				8CCECE6C277CE27D005587CF /* SwiftUINavigator */,
+			);
+			productName = DZ2_PoletaevAV;
+			productReference = 8C3AA61B276F6AAD00BF993F /* DZ2_PoletaevAV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C3AA613276F6AAD00BF993F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8C3AA61A276F6AAD00BF993F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C3AA616276F6AAD00BF993F /* Build configuration list for PBXProject "DZ2_PoletaevAV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C3AA612276F6AAD00BF993F;
+			packageReferences = (
+			);
+			productRefGroup = 8C3AA61C276F6AAD00BF993F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C3AA61A276F6AAD00BF993F /* DZ2_PoletaevAV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C3AA619276F6AAD00BF993F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3AA626276F6AB000BF993F /* Preview Assets.xcassets in Resources */,
+				8C3AA623276F6AB000BF993F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C3AA617276F6AAD00BF993F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C65317E277AEE8B009B9367 /* NewsList.swift in Sources */,
+				8C653191277B3045009B9367 /* Array.swift in Sources */,
+				8C3AA636276F82B800BF993F /* NewsViewModel.swift in Sources */,
+				8C3AA621276F6AAD00BF993F /* ContentView.swift in Sources */,
+				8CCECE75277F29BF005587CF /* TitleButtonModifier.swift in Sources */,
+				8CB4C9A5277C49C30023BC7B /* NewsContent.swift in Sources */,
+				8C65318C277B2E6A009B9367 /* LoadingIndicatorModifier.swift in Sources */,
+				8C65318E277B300E009B9367 /* LazyView.swift in Sources */,
+				8CCECE71277F1EA7005587CF /* NewsContent2.swift in Sources */,
+				8C3AA61F276F6AAD00BF993F /* DZ2_PoletaevAVApp.swift in Sources */,
+				8CCECE77277F2E0A005587CF /* Article+Id.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C3AA627276F6AB000BF993F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C3AA628276F6AB000BF993F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C3AA62A276F6AB000BF993F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "DZ2_PoletaevAV/Preview\\ Content";
+				DEVELOPMENT_TEAM = TWQBM5NDZK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "qeezii.DZ2-PoletaevAV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C3AA62B276F6AB000BF993F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "DZ2_PoletaevAV/Preview\\ Content";
+				DEVELOPMENT_TEAM = TWQBM5NDZK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "qeezii.DZ2-PoletaevAV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C3AA616276F6AAD00BF993F /* Build configuration list for PBXProject "DZ2_PoletaevAV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3AA627276F6AB000BF993F /* Debug */,
+				8C3AA628276F6AB000BF993F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3AA629276F6AB000BF993F /* Build configuration list for PBXNativeTarget "DZ2_PoletaevAV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3AA62A276F6AB000BF993F /* Debug */,
+				8C3AA62B276F6AB000BF993F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C653180277AEFB1009B9367 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		8CCECE6C277CE27D005587CF /* SwiftUINavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUINavigator;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8C3AA613276F6AAD00BF993F /* Project object */;
+}
