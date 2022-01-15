@@ -20,9 +20,7 @@ final class NewsViewModel: ObservableObject {
     @Published var showedAppleNews: Bool = false
     @Published var newsAbout: String = "Russia"
     
-    init() {
-        loadNextPage(newsAbout: newsAbout)
-    }
+    init() {}
     
     func loadNextPage(newsAbout: String) {
         guard isPageLoading == false && totalResults > articles.count else {

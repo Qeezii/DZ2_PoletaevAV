@@ -40,6 +40,9 @@ struct ContentView: View, IItemView {
                 NewsList(listener: listener, newsViewModel: newsVM, newsAbout: newsVM.newsAbout)
             }
         }
+        .onAppear {
+            newsVM.loadNextPage(newsAbout: newsVM.newsAbout)
+        }
     }
 }
 
